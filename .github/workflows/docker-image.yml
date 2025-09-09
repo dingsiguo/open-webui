@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       packages: write
-      contents: write  # 添加这行来授予写入权限
+      contents: write  # 添加这行来授予 写入权限1
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
