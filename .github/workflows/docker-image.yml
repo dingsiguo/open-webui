@@ -23,8 +23,8 @@ jobs:
         uses: docker/login-action@v1
         with:
           registry: ghcr.io
-          username: ${{ github.actor }}
-          password: ${{ secrets.GITHUB_TOKEN }}
+          username: ${{ secrets.dingsiguo }}  # 使用您自己的用户名
+          password: ${{ secrets.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 }} # 您的GitHub个人访问令牌(PAT)
       - name: Build and push Docker image
         uses: docker/build-push-action@v2
         with:
