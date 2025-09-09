@@ -241,12 +241,13 @@
 									</div>
 
 									{#if $config?.onboarding ?? false}
-										<div class="mt-1 text-xs font-medium text-gray-600 dark:text-gray-500">
+										<!-- 移除安全提示文本 -->
+										<!-- <div class="mt-1 text-xs font-medium text-gray-600 dark:text-gray-500">
 											ⓘ {$WEBUI_NAME}
 											{$i18n.t(
 												'does not make any external connections, and your data stays securely on your locally hosted server.'
 											)}
-										</div>
+										</div> -->
 									{/if}
 								</div>
 
@@ -288,7 +289,7 @@
 										{:else}
 											<div class="mb-2">
 												<label for="email" class="text-sm font-medium text-left mb-1 block"
-													>{$i18n.t('Email')}</label
+													>员工号</label
 												>
 												<input
 													bind:value={email}
@@ -297,7 +298,7 @@
 													class="my-0.5 w-full text-sm outline-hidden bg-transparent placeholder:text-gray-300 dark:placeholder:text-gray-600"
 													autocomplete="email"
 													name="email"
-													placeholder={$i18n.t('Enter Your Email')}
+													placeholder="请输入您的员工号"
 													required
 												/>
 											</div>
