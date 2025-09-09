@@ -30,4 +30,4 @@ jobs:
         with:
           context: .
           push: true
-          tags: ghcr.io/${{ github.repository }}:${{ github.sha }}  # 使用提交哈希作为标签，也可以自定义标签策略
+          tags: ghcr.io/${{ github.repository }}:${{ github.sha }}  # 使用提交哈希作为标签，也可以自定义标签策 略
